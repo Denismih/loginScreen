@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct LoginScreenApp: App {
+    @StateObject var authManager = AuthenticationManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authManager.isAuthenticated {
+                ContentView()
+                    .environmentObject(authManager)
+            } else {
+                SignupView()
+                    .environmentObject(authManager)
+            }
         }
     }
 }

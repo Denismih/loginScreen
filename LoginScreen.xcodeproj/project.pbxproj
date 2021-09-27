@@ -11,6 +11,10 @@
 		3CD0747E2700C30C001C1564 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0747D2700C30C001C1564 /* ContentView.swift */; };
 		3CD074802700C30E001C1564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD0747F2700C30E001C1564 /* Assets.xcassets */; };
 		3CD074832700C30E001C1564 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD074822700C30E001C1564 /* Preview Assets.xcassets */; };
+		3CD074902700C534001C1564 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0748F2700C534001C1564 /* SignupView.swift */; };
+		3CD074922700C5A7001C1564 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD074912700C5A7001C1564 /* AuthenticationManager.swift */; };
+		3CD074942700C67B001C1564 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD074932700C67B001C1564 /* APIService.swift */; };
+		3CFC955F2700CA0500360942 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC955E2700CA0500360942 /* SignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		3CD0747F2700C30E001C1564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD074822700C30E001C1564 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CD074842700C30E001C1564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD0748F2700C534001C1564 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		3CD074912700C5A7001C1564 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		3CD074932700C67B001C1564 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3CFC955E2700CA0500360942 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				3CD0747B2700C30C001C1564 /* LoginScreenApp.swift */,
-				3CD0747D2700C30C001C1564 /* ContentView.swift */,
+				3CD0748A2700C341001C1564 /* Views */,
+				3CFC95602701AEF100360942 /* ViewModels */,
+				3CD0748C2700C36C001C1564 /* Services */,
 				3CD0747F2700C30E001C1564 /* Assets.xcassets */,
 				3CD074842700C30E001C1564 /* Info.plist */,
 				3CD074812700C30E001C1564 /* Preview Content */,
@@ -67,6 +77,32 @@
 				3CD074822700C30E001C1564 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CD0748A2700C341001C1564 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0747D2700C30C001C1564 /* ContentView.swift */,
+				3CD0748F2700C534001C1564 /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CD0748C2700C36C001C1564 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CD074912700C5A7001C1564 /* AuthenticationManager.swift */,
+				3CD074932700C67B001C1564 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3CFC95602701AEF100360942 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CFC955E2700CA0500360942 /* SignupViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD074902700C534001C1564 /* SignupView.swift in Sources */,
+				3CD074942700C67B001C1564 /* APIService.swift in Sources */,
+				3CFC955F2700CA0500360942 /* SignupViewModel.swift in Sources */,
+				3CD074922700C5A7001C1564 /* AuthenticationManager.swift in Sources */,
 				3CD0747E2700C30C001C1564 /* ContentView.swift in Sources */,
 				3CD0747C2700C30C001C1564 /* LoginScreenApp.swift in Sources */,
 			);

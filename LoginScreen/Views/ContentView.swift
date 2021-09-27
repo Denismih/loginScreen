@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthenticationManager
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Text("Account created")
+                .padding()
+            Button("Log out") {
+                authManager.updateAuthStatus(authenticated: false)
+            }
+        }
     }
 }
 
